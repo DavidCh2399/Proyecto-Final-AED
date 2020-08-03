@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 #center {
     text-align: center;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -15,36 +20,30 @@
 }
 
 #center input::placeholder{
-
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;    
-
-}
-
-h1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
-    background: #2f3036;
-    text-decoration: none;
 }
 
 #title{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 44px;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
     position: absolute;
-    margin-top: -29px;
-    left: 0px;
-    width: 130%;
+    left: auto;
+    top: auto;
+    width: 100%;
 }
 
 ul {
     list-style-type:none;
     position: absolute;
-    margin-top: -12px;
-    margin-left: 250px;
+    left: 32%;
 }
 
 #menu li {
     display:inline-block;
-    
 }
 
 li a {
@@ -79,20 +78,10 @@ ul li a:hover + .hidden, .hidden:hover {
     display: none;
 }
 
-input[type=checkbox]{
-    display: none;
-}
-
-input[type=checkbox]:checked ~ #menu{
-    display: block;
-}
-
-@media screen and (max-width : 760px){
+@media screen and (max-width : 1300px){
     
     ul {
         position: static;
-        padding: 0;
-        display: none;
         margin: 0;
     }
     
@@ -101,14 +90,12 @@ input[type=checkbox]:checked ~ #menu{
     }
     
     #title{
-        margin-top: -115px;
+        position: static;
+        top: 0%;
     }
 
     ul li, li a {
         width: 100%;
     }
     
-    .show-menu {
-        display:block;
-    }
 } 
